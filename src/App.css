@@ -1,0 +1,77 @@
+body {
+  background: linear-gradient(
+    135deg,
+    #0a0a0a,
+    #1a1a1a,
+    #2e2e2e,
+    #1a1a1a,
+    #0a0a0a
+  );
+  background-size: 400% 400%;
+  animation: metalShine 15s ease-in-out infinite;
+  color: white;
+  min-height: 100vh;
+  margin: 0;
+}
+
+@keyframes metalShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.glitch-text {
+  position: relative;
+  display: inline-block;
+  color: white;
+  animation: glitch 1.5s infinite;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 0 red, -2px 0 cyan;
+  }
+  25% {
+    text-shadow: -2px 0 magenta, 2px 0 lime;
+  }
+  50% {
+    text-shadow: 2px 0 blue, -2px 0 yellow;
+  }
+  75% {
+    text-shadow: -2px 0 orange, 2px 0 green;
+  }
+  100% {
+    text-shadow: 2px 0 red, -2px 0 cyan;
+  }
+}
+
+@keyframes bg-shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-bg-shine {
+  animation: bg-shine 15s ease-in-out infinite;
+}
+
